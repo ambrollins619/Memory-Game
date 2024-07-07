@@ -18,8 +18,10 @@ function checkCompletion(){
     let score_2=parseInt(document.getElementById('score2').innerText);
     let s;
     if(score_1>score_2){
+        document.querySelector('.winImg').src='Iwon.gif';
         s="Player 1 wins";
     } else if(score_1<score_2){
+        document.querySelector('.winImg').src='Iwon.gif';
         s="Player 2 wins";
     } else{
         document.querySelector('.winImg').src='OhNo.gif';
